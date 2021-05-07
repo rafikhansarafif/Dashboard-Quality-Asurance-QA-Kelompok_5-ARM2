@@ -1,0 +1,49 @@
+{% extends 'layout_user.html' %} {% block title %} Dashboard {% endblock %} {% block body %}
+
+<!-- Jumbotron -->
+<body class="d-flex flex-column text-center text-white" style="background-color: #383838">
+  <section class="container d-flex  p-3 mt-4 mx-auto mx-auto flex-column" style="height: 400px">
+    <section class="jumbotron text-center mx-auto mx-auto" style="background-color: #00000000">
+      <h1 class="display-4">Data Input Processing</h1>
+      <p class="lead">Quality Asurance</p>
+    </section>
+  </section>
+  <!-- Akhir Jumbotron -->
+
+
+  </div>
+  <div class="container">
+      <div class="col-md-10 mx-auto">
+        <table id="example" class="table table-striped table-hover table-bordered table-light" style="width: 100%">
+          <thead>
+            <tr>
+              <td>No</td>
+              <td>Data</td>
+              <td>Timestamp</td>
+              <td>Status</td>
+              <td>Action</td>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in list_part %}
+            <tr>             
+              <td>{{item.Id}}</td>
+              <td>{{item.nama_part}}</td>
+              <td>{{item.timestamp}}</td>
+              <td>{{item.status}}</td>
+              <td width="130">
+                
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      
+  </div>
+
+
+</body>
+
+
+{% endblock %}

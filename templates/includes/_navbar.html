@@ -1,0 +1,44 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light p-3 mb-2 navbar-dark bg-gradient shadow-sm" style="background-color: #9f0000">
+  <div class="container">
+    <a class="navbar-brand" href="#">Quality Asurance</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        {% if session['name'] %}
+        <li>
+          <a class="nav-item nav-link" href="/home">Home</a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="/dashboard">Dashboard</a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="/barchart">Chart</a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="/about">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Settings </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="/users">Users</a></li>
+            <li><a class="dropdown-item" href="/logout">Logout</a></li>
+          </ul>
+        </li>
+        {% else %}
+        <li>
+          <a class="nav-item nav-link" href="/">Home</a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="/login">Login</a>
+        </li>
+        <li>
+          <a class="nav-item nav-link" href="/register">Register</a>
+        </li>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</nav>

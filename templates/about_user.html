@@ -1,0 +1,63 @@
+{% extends 'layout_user.html' %} {% block title %} About Us {% endblock %} {% block body %}
+
+<body class="d-flex flex-column text-center text-light" style="background-color: #383838">
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="row text-center mb-4 mt-5">
+        <div class="col">
+          <h2>Our Team Project</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename= 'member/sidiq.JPEG')}}" class="card-img-top" alt="Project 1" />
+            <div class="card-body">
+              <h5 class="card-title text-dark">SIDIQ MAULANA ABDULLOH</h5>
+              <p class="card-text text-dark">19/447128/SV/16847</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename= 'member/taufik.JPG')}}" class="card-img-top" alt="Project 2" />
+            <div class="card-body">
+              <h5 class="card-title text-dark">MUHAMMAD TAUFIK H</h5>
+              <p class="card-text text-dark">19/447314/SV/17008</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename= 'member/alam.JPEG')}}" class="card-img-top" alt="Project 3" />
+            <div class="card-body">
+              <h5 class="card-title text-dark">ALAM ABIDSA</h5>
+              <p class="card-text text-dark">19/447108/SV/16827</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename= 'member/ghilman.JPEG')}}" class="card-img-top" alt="Project 5" />
+            <div class="card-body">
+              <h5 class="card-title text-dark">MUKHAMMAD GHILMAN H</h5>
+              <p class="card-text text-dark">19/447120/SV/16839</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename= 'member/rafif.JPG')}}" class="card-img-top" alt="Project 6" />
+            <div class="card-body">
+              <h5 class="card-title text-dark">RAFIF RAFIKHANSA</h5>
+              <p class="card-text text-dark">19/447315/SV/17009</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'layout.html' %} {% block title %} Homepage {% endblock %} {% block body %}
+
+<title>home</title>
+<body class="d-flex flex-column text-center text-dark" style="background-color: #383838">
+  <div class="container text-light mt-4">
+    <h1 class="text-light">Welcome Admin</h1>
+  </div>
+  <div class="container">
+    <!-- Top 3 Client -->
+    <div class="row">
+      <div class="col info-panel-info">
+        <div class="col-lg text-center mb-3">
+          <h1>Our Web Data</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename= '1.JPG')}}" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <p class="card-text">Data Input Quality Asurance</p>
+                <a href="/dashboard" class="btn btn-primary">Dashboard</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename= '22.JPG')}}" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <p class="card-text">Chart model of Quality Asurance</p>
+                <a href="/barchart" class="btn btn-primary">Chart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename= '31.JPG')}}" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <p class="card-text">About our Team Project</p>
+                <a href="/about" class="btn btn-primary">About</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+{% endblock %}

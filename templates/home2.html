@@ -1,0 +1,42 @@
+{% extends 'layout2.html' %} {% block title %} Homepage {% endblock %} {% block body %}
+
+<body class="d-flex flex-column text-center text-dark" style="background-color: #383838">
+  <div class="container">
+    <!-- Top 3 Client -->
+    <div class="row justify-content-center">
+      <div class="col info-panel-info">
+        <div class="col-lg text-center mb-3">
+          <h1>Our Web Data</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename= '1.JPG')}}" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <p class="card-text">Data Input Quality Asurance</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename= '22.JPG')}}" class="card-img-top" alt="Project 2" />
+              <div class="card-body">
+                <p class="card-text">Chart model of Quality Asurance</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="{{ url_for('static', filename= '31.JPG')}}" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <p class="card-text">About our team project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+{% endblock %}
